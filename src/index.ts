@@ -1,6 +1,6 @@
 // any combination of spaces and punctuation characters
 // thanks to http://stackoverflow.com/a/25575009
-const wordSeparators = /[\s\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,\-.\/:;<=>?@\[\]^_`{|}~]+/
+const wordSeparators = /[\s\u2000-\u206F\u2E00-\u2E7F\\'!"#$%&()*+,\-./:;<=>?@[\]^_`{|}~]+/
 const capitalPlusLower = /[A-ZÀ-Ý\u00C0-\u00D6\u00D9-\u00DD][a-zà-ÿ]/g
 const capitals = /[A-ZÀ-Ý\u00C0-\u00D6\u00D9-\u00DD]+/g
 
