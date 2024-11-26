@@ -1,11 +1,31 @@
 {
-  "private": true,
-  "type": "module",
+  "name": "@substrate-system/kebab-case",
   "version": "0.0.0",
+  "description": "Kebab case, URL safe strings",
+  "directories": {
+    "test": "test"
+  },
+  "type": "module",
   "main": "dist/index.js",
   "files": [
     "./dist/*"
   ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./*": {
+      "import": [
+        "./dist/*.js",
+        "./dist/*"
+      ],
+      "require": [
+        "./dist/*.cjs",
+        "./dist/*"
+      ]
+    }
+  },
   "scripts": {
     "lint": "eslint \"./**/*.{ts,js}\"",
     "build-tests": "esbuild test/index.ts --target=es2020 --bundle --keep-names > test/test-bundle.js",
@@ -24,7 +44,6 @@
     "postversion": "git push --follow-tags && npm publish",
     "prepublishOnly": "npm run build"
   },
-  "dependencies": {},
   "devDependencies": {
     "@substrate-system/debug": "^0.7.2",
     "@substrate-system/tapzero": "^0.10.3",
@@ -35,28 +54,24 @@
     "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
     "markdown-toc": "^1.2.0",
-    "postcss-nesting": "^13.0.0",
     "tap-spec": "^5.0.0",
     "typedoc": "^0.26.4",
-    "typescript": "^5.4.5",
-    "vite": "^5.3.3"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
-    "./*": {
-      "import": [
-        "./dist/*.js",
-        "./dist/*"
-      ],
-      "require": [
-        "./dist/*.cjs",
-        "./dist/*"
-      ]
-    }
+    "typescript": "^5.4.5"
   },
   "author": "nichoth <nichoth@nichoth.com> (https://nichoth.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/substrate-system/kebab-case.git"
+  },
+  "keywords": [
+    "kebab",
+    "case",
+    "string",
+    "url"
+  ],
+  "bugs": {
+    "url": "https://github.com/substrate-system/kebab-case/issues"
+  },
+  "homepage": "https://github.com/substrate-system/kebab-case#readme"
 }

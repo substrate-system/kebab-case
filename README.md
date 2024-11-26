@@ -1,14 +1,15 @@
-# package name here
-![tests](https://github.com/bicycle-codes/crypto-util/actions/workflows/nodejs.yml/badge.svg)
-[![types](https://img.shields.io/npm/types/@substrate-system/icons?style=flat-square)](README.md)
+# kebab case
+![tests](https://github.com/substrate-system/kebab-case/actions/workflows/nodejs.yml/badge.svg)
+[![types](https://img.shields.io/npm/types/@substrate-system/kebab-case?style=flat-square)](README.md)
 [![module](https://img.shields.io/badge/module-ESM%2FCJS-blue?style=flat-square)](README.md)
 [![semantic versioning](https://img.shields.io/badge/semver-2.0.0-blue?logo=semver&style=flat-square)](https://semver.org/)
 [![Common Changelog](https://nichoth.github.io/badge/common-changelog.svg)](./CHANGELOG.md)
-[![install size](https://flat.badgen.net/packagephobia/install/@nichoth/session-cookie)](https://packagephobia.com/result?p=@nichoth/session-cookie)
+[![install size](https://flat.badgen.net/packagephobia/install/@substrate-system/kebab-case)](https://packagephobia.com/result?p=@nichoth/session-cookie)
 [![dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen.svg?style=flat-square)](package.json)
-[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![license](https://img.shields.io/badge/license-Polyform_Non_commercial-26bc71)](LICENSE)
 
-Kebab case a string
+
+Kebab case a string.
 
 ```js
 import { kebabCase } from '@substrate-system/kebab-case'
@@ -24,7 +25,19 @@ kebabCase('theQUICKBrownFox');  // 'the-quick-brown-fox'
 ```
 
 <details><summary><h2>Contents</h2></summary>
+
 <!-- toc -->
+
+- [install](#install)
+- [API](#api)
+  * [ESM](#esm)
+  * [Common JS](#common-js)
+  * [pre-built JS](#pre-built-js)
+- [use](#use)
+  * [example](#example)
+
+<!-- tocstop -->
+
 </details>
 
 ## install
