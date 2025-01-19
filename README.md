@@ -51,12 +51,12 @@ This exposes ESM and common JS via [package.json `exports` field](https://nodejs
 
 ### ESM
 ```js
-import '@substrate-system/kebab-case'
+import { kebabCase } from '@substrate-system/kebab-case'
 ```
 
 ### Common JS
 ```js
-require('@substrate-system/kebab-case')
+const { kebabCase } = require('@substrate-system/kebab-case')
 ```
 
 ### pre-built JS
